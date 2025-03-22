@@ -3,6 +3,7 @@ Need something to prepare to an exam or write a lab? Read it!
 
 ## Content
 - [Элементы управления](controls.md)
+- [Менеджеры компоновки](layout_managers.md)
 
 ## Something get wrong?
 If you have noticed a mistake or code doesn't work for some reason, feel free to tell about that. Write on the Telegram @johanngorban or to my email johanniwork@gmail.com
