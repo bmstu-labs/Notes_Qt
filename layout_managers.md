@@ -53,3 +53,43 @@ int main(int argc, char **argv) {
 ```
 
 **Табличное размещение QGridLayout** 
+Для табличного размещения служит класс `QGridLayout`. Таблица состоит из ячеек, позиции которых задаются строками и столбцами.
+
+Если нужна таблица из двух столбцов, то можно воспользоваться классом `QFormLayout`, он помогает реализовать более компактный код
+
+**Пример кода**
+```
+#include <QtWidgets>
+
+int main(int argc, char **argv) {
+	QApplication app(argc, argv);
+	QWidget wgt;
+	
+	// Создание кнопок
+	QPushButton *pcmdA = new QPushButton("A");
+	QPushButton *pcmdB = new QPushButton("B");
+	QPushButton *pcmdC = new QPushButton("C");
+	QPushButton *pcmdD = new QPushButton("D");
+	
+	// Создать компоновку
+	QGridLayout *pgrdLayout = new GridLayout();
+
+	// Устаналиваем отступы от границы в пикселях от всех сторон
+	pgrdLayout->setContentsMargins(5, 5, 5, 5);
+	// Установить расстояние в 15 пикселей между виджетами
+	pgrdLayout->setSpacing(15);
+
+	// Добавить виджеты в компоновку
+	pgrdLayout->addWidget(pcmdA, 0, 0);
+	pgrdLayout->addWidget(pcmdB, 0, 1);
+	pgrdLayout->addWidget(pcmdC, 1, 0);
+	pgrdLayout->addWidget(pcmdD, 1, 1);
+	
+	// Установить компоновку
+	wgt.setLayout(pgrdLayout);
+	
+	// Отобразить виджет
+	wgt.show();
+
+	return app.exec();
+```
