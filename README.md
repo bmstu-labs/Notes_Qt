@@ -14,6 +14,6 @@ If you have noticed a mistake or code doesn't work for some reason, feel free to
 I will really appreciate your notes about the problem you faced. Thank you! <3
 
 
-#fixed-size
+<a name="fixed-size"></a>
 ### Set fixed sized for window
 Use method `QWidget::setFixedSize(height_pix, width_pix)` for your widget to set fixed in pixels
