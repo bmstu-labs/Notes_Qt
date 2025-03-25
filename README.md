@@ -4,6 +4,9 @@ Need something to prepare to an exam or write a lab? Read it!
 ## Content
 - [Элементы управления](controls.md)
 - [Менеджеры компоновки](layout_managers.md)
+- [Электронный индикатор (QLCDNumber)](lcd_display.md)
+- [Кнопки и их виды](buttons.md)
+- [Индикатор выполнения](progress_bar.md)
 
 ## How to...
 - [Set fixed size for window](#fixed-size)
